@@ -55,3 +55,11 @@ for simple conversion to PDF format).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Aug 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120224-1
++ Revision: 814517
+- Import texlive-uwmslide
+- Import texlive-uwmslide
+
