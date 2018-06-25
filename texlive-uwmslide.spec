@@ -5,7 +5,7 @@
 # catalog-license artistic
 # catalog-version undef
 Name:		texlive-uwmslide
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Slides with a simple Power Point like appearance
 Group:		Publishing
