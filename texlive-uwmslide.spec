@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-uwmslide
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Slides with a simple Power Point like appearance
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uwmslide
