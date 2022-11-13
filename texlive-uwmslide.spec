@@ -1,18 +1,12 @@
-# revision 27354
-# category Package
-# catalog-ctan /macros/latex/contrib/uwmslide
-# catalog-date 2012-02-24 11:11:42 +0100
-# catalog-license artistic
-# catalog-version undef
 Name:		texlive-uwmslide
-Version:	20180303
-Release:	3
+Version:	27354
+Release:	1
 Summary:	Slides with a simple Power Point like appearance
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uwmslide
 License:	ARTISTIC
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uwmslide.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uwmslide.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uwmslide.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uwmslide.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ and uses Times Roman by default (originally, it was claimed,
 for simple conversion to PDF format).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,18 +42,10 @@ for simple conversion to PDF format).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Aug 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120224-1
-+ Revision: 814517
-- Import texlive-uwmslide
-- Import texlive-uwmslide
-
