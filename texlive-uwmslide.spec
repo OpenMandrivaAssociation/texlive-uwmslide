@@ -3,7 +3,7 @@ Version:	27354
 Release:	2
 Summary:	Slides with a simple Power Point like appearance
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uwmslide
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/uwmslide
 License:	ARTISTIC
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uwmslide.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uwmslide.doc.r%{version}.tar.xz
